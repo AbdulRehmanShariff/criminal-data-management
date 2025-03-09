@@ -116,3 +116,36 @@ SOFTWARE.
 # email 
 
 [rehmanshariff996@gmail.com]
+
+
+# MySql
+To create a database for your Criminal Management System application, you'll need to set up a MySQL database and create the necessary table. I'll walk you through the process step by step:
+Step 1: Install MySQL if you haven't already
+Make sure MySQL Server is installed on your computer. You can download it from the official MySQL website.
+Step 2: Access MySQL
+Open MySQL command line client or a tool like MySQL Workbench. Log in with your root credentials (using the password you have in your code: 'MySql Password').
+Step 3: Create the Database
+CREATE DATABASE rs;   #give any name for creating the database
+USE rs;
+Step 4: Create the Criminal Table
+Based on the fields in your application, create the criminal1 table:   # after creating database then click on it and create a table, you can give any name for table 
+CREATE TABLE criminal1 (
+    case_id VARCHAR(50) PRIMARY KEY,
+    criminal_no VARCHAR(50) NOT NULL,
+    criminal_name VARCHAR(100) NOT NULL,
+    nickname VARCHAR(100),
+    arrest_date VARCHAR(50),
+    date_of_crime VARCHAR(50),
+    address VARCHAR(200),
+    age VARCHAR(10),
+    occupation VARCHAR(100),
+    birthmark VARCHAR(100),
+    crime_type VARCHAR(100),
+    father_name VARCHAR(100),
+    gender VARCHAR(10),
+    wanted VARCHAR(10),
+    image VARCHAR(255)
+);
+Step 5: Verify the Table Creation
+DESCRIBE criminal1;  #if you get confused then watch somne youtube tutorials for better understand.
+
